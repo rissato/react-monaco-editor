@@ -104,6 +104,8 @@ export interface MonacoEditorProps extends MonacoEditorBaseProps {
    * Let the language be inferred from the uri
    */
   uri?: (monaco: typeof monacoEditor) => monacoEditor.Uri;
+
+  editorRef?: React.RefObject<monacoEditor.editor.IStandaloneCodeEditor | null>;
 }
 
 // ============ Diff Editor ============
